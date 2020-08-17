@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shib S. Sahoo | Portfolio">
+    <meta name="keywords" content="Design, Interaction, HCI, Art, IIT Kanpur, Graphic design, Portfolio, shibhash, iitk">
+    <meta name="author" content="Shib Shankar Sahoo">
+    <title> Shib S. Sahoo </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+   
+    <link rel="shortcut icon" href="images/home/ico2.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="image_src" href="images/home/ico2.png">
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+	<header id="header"> 
+
+
+
+        
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+
+                            <a class="navbar-brand" href="index.html">
+                                    <div id= "crossfade">
+                                         <img class = "cone" src = "images/home/hh.jpg" alt = "png">
+                                         <img class = "ctwo" src = "images/home/aa.jpg" alt = "png">
+                                         <img class = "cthree" src = "images/home/bb.jpg" alt = "png">
+                                         <img class = "cfour" src = "images/home/cc.jpg" alt = "png">
+                                         <img class = "cfive" src = "images/home/dd.jpg" alt = "png">
+                                         <img class = "cfive" src = "images/home/yy.jpg" alt = "png">
+                                    </div>
+                    	   </a>
+                </div>
+                
+            <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+
+                         <li class="dropdown"><a href="portfolio.html">Work <i class="fa fa-angle-down" onclick="document.location='portfolio.html';"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="singularity.html">Blog</a></li>
+                                
+                            </ul>
+                        </li> 
+                                         
+                        <li class="dropdown"><a href="aboutme.html">About me<i class="fa fa-angle-down" onclick="document.location='aboutme.html';"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="aboutme.html">Bio</a></li>
+                                <li><a href="hobbies.html" name ="hobbies">Hobbies</a></li>
+                                
+                                
+                            </ul>
+                        </li>
+                                               
+                                           
+                    </ul>
+                </div>
+
+                <div class="search">
+                    <form role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                        </div>
+                    </form>
+                </div>   
+
+            </div>
+        </div>
+    </header>
+    
+
+<div class="col-sm-12 text-center wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms" style="align:center" >
+
+
+<div class="hi " onmousemove="transition()">
+<h1 class="margin-bottom" >Surreal Singularity</h1>
+    
+
+            <script src="js/d3.v3.min.js"></script>
+
+                <script>
+                    
+                    var n = 20, 
+                        m = 200, 
+                        stack = d3.layout.stack().offset("wiggle"),
+                        layers0 = stack(d3.range(n).map(function() { return bumpLayer(m); })),
+                        layers1 = stack(d3.range(n).map(function() { return bumpLayer(m); }));
+
+                    var width = screen.width + 200;
+                        height = screen.height/1.618;
+
+                    var x = d3.scale.linear()
+                        .domain([0, m - 1])
+                        .range([0, width]);
+
+                    var y = d3.scale.linear()
+                        .domain([0, d3.max(layers0.concat(layers1), function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); })])
+                        .range([height, 0]);
+
+                    var color = d3.scale.linear() 
+                        .range(["#aad", "#556"]);
+                     
+                       //.range(["#f11730", "#680712"]);
+               
+
+
+
+                  var opacity = d3.scale.linear() 
+                    .range([".98", "1"]);
+
+
+                    var area = d3.svg.area()
+                        .x(function(d) { return x(d.x); })
+                        .y0(function(d) { return y(d.y0); })
+                        .y1(function(d) { return y(d.y0 + d.y); });
+
+                    var svg = d3.select("body").append("svg")
+                        .attr("width", width)
+                        .attr("height", height);
+
+                    svg.selectAll("path")
+                        .data(layers0)
+                        .enter().append("path")
+                        .attr("d", area)
+                        .style("opacity", function() { return opacity(Math.random()); })
+                        .style("fill", function() { return color(Math.random()); })
+                    
+
+            
+                    function transition() {
+                      d3.selectAll("path")
+                          .data(function() {
+                            var d = layers1;
+                            layers1 = layers0;
+                            return layers0 = d;
+                          })
+                        .transition()
+                          .duration(1800)
+                          .attr("d", area);
+
+                    }
+
+                    
+
+                    // Inspired by Lee Byron's test data generator.
+                    function bumpLayer(n) {
+
+                      function bump(a) {
+                        var x = 1 / (.1 + Math.random()),
+                            y = 2 * Math.random() - .5,
+                            z = 10 / (.1 + Math.random());
+                        for (var i = 0; i < n; i++) {
+                          var w = (i / n - y) * z;
+                          a[i] += x * Math.exp(-w * w);
+                        }
+                      }
+
+                      var a = [], i;
+                      for (i = 0; i < n; ++i) a[i] = 0;
+                      for (i = 0; i < 5; ++i) bump(a);
+                      return a.map(function(d, i) { return {x: i, y: Math.max(0, d)}; });
+                    }
+
+
+                
+
+
+                </script>
+   
+
+</div>
+</div>
+                
+                <div class="container">
+         
+                    <div align="center">
+                            <div class="col-md-4 col-md-offset-4" >
+                                <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="100ms">  
+                                     
+                                <a href="portfolio.html" class="btn btn-portfolio" style="vertical-align:middle" onmouseover="transition()"><span>Portfolio</span></a> 
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+ <section id="company-information padding-top">
+        <div class="container">
+            <div class="row">
+                <h1 class="title text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">My Recent Projects</h1>
+            
+               
+                <div id="team-carousel" class="carousel slide wow fadeIn" data-ride="carousel" data-wow-duration="400ms" data-wow-delay="400ms">
+       
+                    <ol class="carousel-indicators visible-xs">
+                        <li data-target="#team-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#team-carousel" data-slide-to="1"></li>
+                    </ol>
+         
+                    <div class="carousel-inner">
+                        <div class="item active">
+
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single"  onclick="document.location='logofolio.html';">
+                                        <div class="person-thumb">
+                                            <img src="images/portfolio/logofolio_thumb.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="social-profile">
+                                            <ul class="nav nav-pills">
+                                                <li><a href="logofolio.html"><i class="fa fa-link"></i></a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Logofolio </h2>
+                                        <p>Brand identity design for various clients</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single" onclick="document.location='tinkreta.html';">
+                                        <div class="person-thumb">
+                                            <img src="images/portfolio/tinkreta_thumb.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="social-profile">
+                                            <ul class="nav nav-pills">
+                                                <li><a href="tinkreta.html"><i class="fa fa-link"></i></a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Tinkreta</h2>
+                                        <p>Interactive modular learning &amp; tinkering kit for children</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single" onclick="document.location='prosthetic.html';">
+                                        <div class="person-thumb">
+                                            <img src="images/portfolio/prosthetic_thumb.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="social-profile">
+                                            <ul class="nav nav-pills">
+                                                <li><a href="prosthetic.html"><i class="fa fa-link"></i></a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Prosthetic hand</h2>
+                                        <p>Frugal innovation in design and technology</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single" onclick="document.location='evive.html';">
+                                        <div class="person-thumb">
+                                            <img src="images/portfolio/evive_thumb.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="social-profile">
+                                            <ul class="nav nav-pills">
+                                                <li><a href="evive.html"><i class="fa fa-link"></i></a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Evive</h2>
+                                        <p>The ultimate open-source embedded platform</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                                    
+                        </div>
+
+
+                        <div class="item">
+
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single"  onclick="document.location='bluediary.html';">
+                                        <div class="person-thumb">
+                                            <img src="images/portfolio/bblue_thumb.jpg" class="img-responsive" alt="" height="480px">
+                                        </div>
+                                        <div class="social-profile">
+                                            <ul class="nav nav-pills">
+                                                <li><a href="bluediary.html"><i class="fa fa-link"></i></a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Blue Diary</h2>
+                                        <p>Personal Project | Illustration Series &amp; Book Design</p>
+                                    </div>
+                                </div>
+                            </div>              
+                            
+
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single"  onclick="document.location='pacific.html';">
+                                        <div class="person-thumb">
+                                            <img src="images/portfolio/pacific_thumb.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="social-profile">
+                                            <ul class="nav nav-pills">
+                                                <li><a href="pacific.html"><i class="fa fa-link"></i></a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Pacific smoke</h2>
+                                        <p>Virtual reality, 3D animation &amp; interaction</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single"  onclick="document.location='soc.html';">
+                                        <div class="person-thumb">
+                                            <img src="images/portfolio/soc_thumb.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="social-profile">
+                                            <ul class="nav nav-pills">
+                                                <li><a href="soc.html"><i class="fa fa-link"></i></a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>SOC</h2>
+                                        <p>Social search engine Design | User experience design </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single" onclick="document.location='visualconception.html';">
+                                        <div class="person-thumb">
+                                            <img src="images/portfolio/vc_thumb.jpg" class="img-responsive" alt="" onclick="location.href='visualconception.html';">
+                                        </div>
+                                        <div class="social-profile">
+                                            <ul class="nav nav-pills">
+                                                <li><a href="visualconception.html"><i class="fa fa-link"></i></a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2 >Visual conception</h2>
+                                        <p>Graphic experimentation &amp; exploration</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        
+                   
+
+
+                        </div>
+                    </div>
+
+             
+                    <a class="left team-carousel-control hidden-xs" href="#team-carousel" data-slide="prev">left</a>
+                    <a class="right team-carousel-control hidden-xs" href="#team-carousel" data-slide="next">right</a>
+                </div>
+
+
+
+            </div>
+        </div>
+<br>
+
+</section>
+
+    
+
+<br>
+                            
+<div class="container">
+    <p></p>
+</div>
+
+
+<!--
+
+        <div class="container">
+            <div class="row">
+       
+                      
+
+                    <div class="col-md-12" >
+                        <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="100ms">
+                            <br>
+
+                  
+                            <h1 class="title" style="font-family:'Raleway'; font-weight: 800; ">Hi ! I'm Shib.</h1><br> 
+                                </div>
+
+                              <p align="left" >
+
+
+                            I have an eclectic background spanning New Media Interaction, Product Design and Visual exploration. My focus areas include, but are not limited to Digital media, brand identity design, Rapid prototyping, graphic arts and animation. IYou can know more about me 
+                            <a href ="aboutme.html"> here</a> </p>
+                        
+                        </div> 
+
+                    </div>
+            </div>
+        </div>
+
+-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                    <img src="images/home/under.png" class="img-responsive inline" alt="">
+                </div>
+            
+                
+                
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; Shib Shankar Sahoo 2016 </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script> 
+    <script type="text/javascript" src="js/d3.v3.min.js"></script>     
+
+
+
+
+
+</body>
+</html>

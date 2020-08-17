@@ -1,0 +1,442 @@
+
+#square {
+            width: 70px;
+            height: 70px;
+            background: #f1c40f;
+             -webkit-transform: rotate(45deg);
+                   -moz-transform: rotate(45deg);
+                     -o-transform: rotate(45deg);
+        }
+#square1 {
+            width: 70px;
+            height: 70px;
+            background: #f1c40f;
+             
+        }
+
+
+
+
+#triangle41 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 140px 0 0 140px;
+
+            border-color: transparent transparent transparent #8e44ad;
+            -webkit-transform: rotate(0deg);
+                   -moz-transform: rotate(0deg);
+                     -o-transform: rotate(0deg);     
+        }
+
+
+#triangle42 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 140px 0 0 140px;
+
+            border-color: transparent transparent transparent #8e44ad;
+            -webkit-transform: rotate(45deg);
+                   -moz-transform: rotate(45deg);
+                     -o-transform: rotate(45deg);     
+        }
+
+#triangle43 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 140px 0 0 140px;
+
+            border-color: transparent transparent transparent #8e44ad;
+            -webkit-transform: rotate(90deg);
+                   -moz-transform: rotate(90deg);
+                     -o-transform: rotate(90deg);     
+        }
+
+
+#triangle44 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 140px 0 0 140px;
+
+            border-color: transparent transparent transparent #8e44ad;
+            -webkit-transform: rotate(135deg);
+                   -moz-transform: rotate(135deg);
+                     -o-transform: rotate(135deg);     
+        }
+
+#triangle45 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 140px 0 0 140px;
+
+            border-color: transparent transparent transparent #8e44ad;
+            -webkit-transform: rotate(180deg);
+                   -moz-transform: rotate(180deg);
+                     -o-transform: rotate(180deg);     
+        }
+
+
+#triangle46 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 140px 0 0 140px;
+
+            border-color: transparent transparent transparent #8e44ad;
+            -webkit-transform: rotate(-45deg);
+                   -moz-transform: rotate(-45deg);
+                     -o-transform: rotate(-45deg);     
+        }
+
+#triangle47 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 140px 0 0 140px;
+
+            border-color: transparent transparent transparent #8e44ad;
+            -webkit-transform: rotate(-90deg);
+                   -moz-transform: rotate(-90deg);
+                     -o-transform: rotate(-90deg);     
+        }
+
+
+#triangle48 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 140px 0 0 140px;
+
+            border-color: transparent transparent transparent #8e44ad;
+            -webkit-transform: rotate(-135deg);
+                   -moz-transform: rotate(-135deg);
+                     -o-transform: rotate(-135deg);     
+        }
+
+
+
+#triangle5 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 100px 0 0 100px;
+
+            border-color: transparent transparent transparent #d35400;
+            -webkit-transform: rotate(45deg);
+                   -moz-transform: rotate(45deg);
+                     -o-transform: rotate(45deg);
+            
+        }
+
+#triangle5a {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 100px 0 0 100px;
+
+            border-color: transparent transparent transparent #d35400;
+            -webkit-transform: rotate(90deg);
+                   -moz-transform: rotate(90deg);
+                     -o-transform: rotate(90deg);
+            
+        }
+
+#triangle5b {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 100px 0 0 100px;
+
+            border-color: transparent transparent transparent #d35400;
+            -webkit-transform: rotate(135deg);
+                   -moz-transform: rotate(135deg);
+                     -o-transform: rotate(135deg);
+            
+        }
+
+#triangle5c {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 100px 0 0 100px;
+
+            border-color: transparent transparent transparent #d35400;
+            -webkit-transform: rotate(180deg);
+                   -moz-transform: rotate(180deg);
+                     -o-transform: rotate(180deg);
+            
+        }
+
+
+#triangle5d {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 100px 0 0 100px;
+
+            border-color: transparent transparent transparent #d35400;
+            -webkit-transform: rotate(225deg);
+                   -moz-transform: rotate(225deg);
+                     -o-transform: rotate(225deg);
+            
+        }
+
+#triangle5e {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 100px 0 0 100px;
+
+            border-color: transparent transparent transparent #d35400;
+            -webkit-transform: rotate(270deg);
+                   -moz-transform: rotate(270deg);
+                     -o-transform: rotate(270deg);
+            
+        }
+
+#triangle5f {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 100px 0 0 100px;
+
+            border-color: transparent transparent transparent #d35400;
+            -webkit-transform: rotate(315deg);
+                   -moz-transform: rotate(315deg);
+                     -o-transform: rotate(315deg);
+            
+        }
+#triangle5g {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 100px 0 0 100px;
+
+            border-color: transparent transparent transparent #d35400;
+            -webkit-transform: rotate(360deg);
+                   -moz-transform: rotate(360deg);
+                     -o-transform: rotate(360deg);
+            
+        }
+
+#triangle5h {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+            border-width: 100px 0 0 100px;
+
+            border-color: transparent transparent transparent #d35400;
+            -webkit-transform: rotate(405deg);
+                   -moz-transform: rotate(405deg);
+                     -o-transform: rotate(405deg);
+            
+        }
+
+
+       
+
+            #parallelogram {
+                width: 100px;
+                height: 50px;
+
+                -webkit-transform: skew(-45deg);
+                   -moz-transform: skew(-45deg);
+                     -o-transform: skew(-45deg);
+
+                
+
+                background: #27ae60;
+            }
+
+            #parallelogram1 {
+                width: 100px;
+                height: 50px;
+
+
+                -webkit-transform: skew(45deg);
+                   -moz-transform: skew(45deg);
+                     -o-transform: skew(45deg);
+
+                -webkit-transform: rotate(45deg);
+                   -moz-transform: rotate(45deg);
+                     -o-transform: rotate(45deg);
+
+
+                background: #27ae60;
+            }
+
+            #parallelogram2 {
+                width: 100px;
+                height: 50px;
+
+                -webkit-transform: skew(90deg);
+                   -moz-transform: skew(90deg);
+                     -o-transform: skew(90deg);
+
+                -webkit-transform: rotate(90deg);
+                   -moz-transform: rotate(90deg);
+                     -o-transform: rotate(90deg);
+
+
+                background: #27ae60;
+            }
+
+            #parallelogram3 {
+                width: 100px;
+                height: 50px;
+
+                -webkit-transform: skew(-45deg);
+                   -moz-transform: skew(-45deg);
+                     -o-transform: skew(-45deg);
+
+                -webkit-transform: rotate(135deg);
+                   -moz-transform: rotate(135deg);
+                     -o-transform: rotate(135deg);
+
+               
+
+                background: #27ae60;
+            }
+
+
+
+           
+  
+#triangle_lear1 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+         
+            border-width: 71px 0 0 71px;
+
+            border-color: transparent transparent transparent #4aa3df;
+            -webkit-transform: rotate(45deg);
+                   -moz-transform: rotate(45deg);
+                     -o-transform: rotate(45deg);
+
+        }
+ #triangle_lear2 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+         
+            border-width: 71px 0 0 71px;
+
+            border-color: transparent transparent transparent #4aa3df;
+            -webkit-transform: rotate(90deg);
+                   -moz-transform: rotate(90deg);
+                     -o-transform: rotate(90deg);
+
+        }
+ #triangle_lear3 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+         
+            border-width: 71px 0 0 71px;
+
+            border-color: transparent transparent transparent #4aa3df;
+            -webkit-transform: rotate(135deg);
+                   -moz-transform: rotate(135deg);
+                     -o-transform: rotate(135deg);
+
+        }
+
+
+  #triangle_lear4 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+         
+            border-width: 71px 0 0 71px;
+
+            border-color: transparent transparent transparent #4aa3df;
+            
+
+        }
+
+
+#triangle_lear5 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+         
+            border-width: 71px 0 0 71px;
+
+            border-color: transparent transparent transparent #4aa3df;
+            -webkit-transform: rotate(-45deg);
+                   -moz-transform: rotate(-45deg);
+                     -o-transform: rotate(-45deg);
+
+        }
+
+ #triangle_lear6 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+         
+            border-width: 71px 0 0 71px;
+
+            border-color: transparent transparent transparent #4aa3df;
+            -webkit-transform: rotate(-90deg);
+                   -moz-transform: rotate(-90deg);
+                     -o-transform: rotate(-90deg);
+
+        }
+
+ #triangle_lear7 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+         
+            border-width: 71px 0 0 71px;
+
+            border-color: transparent transparent transparent #4aa3df;
+            -webkit-transform: rotate(-135deg);
+                   -moz-transform: rotate(-135deg);
+                     -o-transform: rotate(-135deg);
+
+        }
+#triangle_lear8 {
+            width: 0;
+            height: 0; z-index:10;
+
+            border-style: solid;
+         
+            border-width: 71px 0 0 71px;
+
+            border-color: transparent transparent transparent #4aa3df;
+            -webkit-transform: rotate(180deg);
+                   -moz-transform: rotate(180deg);
+                     -o-transform: rotate(180deg);
+
+        }
+
